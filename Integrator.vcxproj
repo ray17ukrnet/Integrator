@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86779701-114D-4867-91FC-F8B97510D996}</ProjectGuid>
+    <RootNamespace>GivsServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">R:\ACE_wrappers;R:\ACE_wrappers\TAO;R:\MySQL_x86_XP\mysql++-3.2.3\lib;R:\MySQL_x86_XP\MySQL Connector C 6.1\include;R:\openssl-1.0.2n-build_vs2017_x86_1\include;R:\CryptoLib\SDK_Headers;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">R:\ACE_wrappers\lib_x86;R:\Libs_x86;R:\openssl-1.0.2n-build_vs2017_x86_1\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Visual Leak Detector\include;R:\ACE_wrappers;R:\ACE_wrappers\TAO;R:\MySQL_x86_XP\mysql++-3.2.3\lib;R:\MySQL_x86_XP\MySQL Connector C 6.1\include;R:\openssl-1.0.2n-build_vs2017_x86_1\include;R:\CryptoLib\SDK_Headers\;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;R:\ACE_wrappers\lib_x86;R:\Libs_x86;R:\openssl-1.0.2n-build_vs2017_x86_1\lib;R:\CryptoLib\SDK_Headers\;..\BaseServer\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\BaseServer;..\BaseServer\BaseServer;.;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>aced.lib;ACE_SSLd.lib;ACEXMLd.lib;taod.lib;TAO_PortableServerd.lib;TAO_Utilsd.lib;BaseServerd.lib;Wininet.lib;crypt32.lib;mysqlpp_d.lib;libeay32.lib;Cl3ClientLibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\BaseServer\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\BaseServer;..\BaseServer\BaseServer;.;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ace.lib;ACE_SSL.lib;ACEXML.lib;tao.lib;TAO_PortableServer.lib;TAO_Utils.lib;BaseServer.lib;Wininet.lib;crypt32.lib;mysqlpp.lib;libeay32.lib;CL3ClientLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\BaseServer\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="IntegratorServer.cpp" />
+    <ClCompile Include="Requests\IntegratorServerCommand.cpp" />
+    <ClCompile Include="SaListener\IntegratorConsoleListener.cpp" />
+    <ClCompile Include="Server\IntegratorParametrs.cpp">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="Server\IntegratorServer_i.cpp" />
+    <ClCompile Include="Common\IntegratorCommon.cpp" />
+    <ClCompile Include="Common\IntegratorConverters.cpp" />
+    <ClCompile Include="Common\IntegratorMsstream.cpp" />
+    <ClCompile Include="KbdHandler\IntegratorKbdHandler.cpp" />
+    <ClCompile Include="SaListener\IntegratorSignedListener.cpp" />
+    <ClCompile Include="SaListener\IntegratorStornoListener.cpp" />
+    <ClCompile Include="Database\IntegratorDatabase.cpp" />
+    <ClCompile Include="SendThread\IntegratorSendThread.cpp" />
+    <ClCompile Include="Requests\IntegratorMillExtAcceptor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="integrator_pch.h" />
+    <ClInclude Include="IntegratorConfiguration.h" />
+    <ClInclude Include="Requests\IntegratorServerCommand.h" />
+    <ClInclude Include="SaListener\IntegratorConsoleListener.h" />
+    <ClInclude Include="Server\IntegratorParametrs.h" />
+    <ClInclude Include="Server\IntegratorServer_i.h" />
+    <ClInclude Include="Common\IntegratorCommon.h" />
+    <ClInclude Include="Common\IntegratorConverters.h" />
+    <ClInclude Include="Common\IntegratorMsstream.h" />
+    <ClInclude Include="Common\IntegratorPreAllocated.h" />
+    <ClInclude Include="Common\IntegratorSrvConst.h" />
+    <ClInclude Include="Common\IntegratorSrvError.h" />
+    <ClInclude Include="Common\IntegratorSrvTypes.h" />
+    <ClInclude Include="KbdHandler\IntegratorKbdHandler.h" />
+    <ClInclude Include="SaListener\IntegratorSignedListener.h" />
+    <ClInclude Include="SaListener\IntegratorStornoListener.h" />
+    <ClInclude Include="Requests\IntegratorMillExtAcceptor.h" />
+    <ClInclude Include="Database\IntegratorDatabase.h" />
+    <ClInclude Include="SendThread\IntegratorSendThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseServer\BaseServer.vcxproj">
+      <Project>{e64af215-bc52-4798-9255-e1d80c83f38b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

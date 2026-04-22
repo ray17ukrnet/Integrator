@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{82e463ad-e62b-42ab-ad5e-c01ff0a5330b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{9b8ad625-5f21-4280-8cdd-4893072aa4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\KbdHandler">
+      <UniqueIdentifier>{bb589e82-5dc5-4fdd-a394-08b87fe22d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SaListener">
+      <UniqueIdentifier>{acba15e5-bbb0-49b3-9c43-d677945c6380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logger">
+      <UniqueIdentifier>{2f9141ad-5bec-43e3-9ac5-f23341b464f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{2245ea9c-16c1-490b-9da5-a4982c508a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SendThread">
+      <UniqueIdentifier>{ed7a95f5-9182-4243-8733-99c094463ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests">
+      <UniqueIdentifier>{4fe4727a-18d1-4a4b-80e0-8ff3b11dfe69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{245419a9-eb14-4fb7-b022-e7525be05a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{893dead2-9593-4e11-8664-ffb30dd07b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\KbdHandler">
+      <UniqueIdentifier>{c45c3be6-dfa8-4095-a9a9-e10eebd908a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SaListener">
+      <UniqueIdentifier>{d66dd427-5f0e-465e-b69e-9f82bb18d8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Requests">
+      <UniqueIdentifier>{a4ddda35-c3d9-4359-82ab-8ca53a5b4fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logger">
+      <UniqueIdentifier>{29408227-0e8d-41f7-9b48-a7383e69a862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{85af8dad-74fb-4d6f-bf30-86d99d96f8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SendThread">
+      <UniqueIdentifier>{feb2c8d0-6a05-41b6-9c73-bf352afab723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IntegratorServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\IntegratorParametrs.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\IntegratorServer_i.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IntegratorCommon.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IntegratorConverters.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IntegratorMsstream.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="KbdHandler\IntegratorKbdHandler.cpp">
+      <Filter>Source Files\KbdHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="SaListener\IntegratorSignedListener.cpp">
+      <Filter>Source Files\SaListener</Filter>
+    </ClCompile>
+    <ClCompile Include="SaListener\IntegratorStornoListener.cpp">
+      <Filter>Source Files\SaListener</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\IntegratorDatabase.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="SendThread\IntegratorSendThread.cpp">
+      <Filter>Source Files\SendThread</Filter>
+    </ClCompile>
+    <ClCompile Include="Requests\IntegratorMillExtAcceptor.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="Requests\IntegratorServerCommand.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="SaListener\IntegratorConsoleListener.cpp">
+      <Filter>Source Files\SaListener</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="integrator_pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegratorConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\IntegratorParametrs.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\IntegratorServer_i.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorCommon.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorConverters.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorMsstream.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorPreAllocated.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorSrvConst.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorSrvError.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\IntegratorSrvTypes.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="KbdHandler\IntegratorKbdHandler.h">
+      <Filter>Header Files\KbdHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SaListener\IntegratorSignedListener.h">
+      <Filter>Header Files\SaListener</Filter>
+    </ClInclude>
+    <ClInclude Include="SaListener\IntegratorStornoListener.h">
+      <Filter>Header Files\SaListener</Filter>
+    </ClInclude>
+    <ClInclude Include="Requests\IntegratorMillExtAcceptor.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\IntegratorDatabase.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SendThread\IntegratorSendThread.h">
+      <Filter>Header Files\SendThread</Filter>
+    </ClInclude>
+    <ClInclude Include="Requests\IntegratorServerCommand.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="SaListener\IntegratorConsoleListener.h">
+      <Filter>Header Files\SaListener</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

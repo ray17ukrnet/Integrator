@@ -1,0 +1,6 @@
+ALTER TABLE `tradedb3_1`.`payowner` ADD COLUMN `Ipn` VARCHAR(20) AFTER `payname`,
+ ADD COLUMN `Bday` VARCHAR(24) AFTER `Ipn`,
+ ADD COLUMN `Bplace` VARCHAR(64) AFTER `Bday`,
+ ADD COLUMN `phone` VARCHAR(16) AFTER `Bplace`,
+ ADD COLUMN `PassNo` VARCHAR(16) AFTER `phone`,
+ ADD COLUMN `ImmDay` VARCHAR(64) AFTER `PassNo`;

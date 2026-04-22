@@ -1,0 +1,121 @@
+﻿#
+COMMON_CONFIG  = C:\work\BaseServer_VS2019\BaseServer\Common.cnf
+#
+#***************************************
+# Интерфейс к базе данных
+#***************************************
+#
+# Reports db
+#
+#REPORTS_DATABASE_HOST=		127.0.0.1
+#REPORTS_DATABASE_HOST=		172.27.72.131
+#REPORTS_DATABASE_PORT=		3306	
+#REPORTS_DATABASE_NAME=		Reports
+#REPORTS_DATABASE_LOGIN=		TradeServer
+#REPORTS_DATABASE_PASSWORD=	123456
+#
+# test db
+#
+#DATABASE_HOST=			127.0.0.1
+#DATABASE_HOST=			172.27.72.131
+#DATABASE_PORT=			3306	
+#DATABASE_NAME=			tradedb3_1
+#DATABASE_LOGIN=			TradeServer
+#DATABASE_PASSWORD=		123456
+#
+#***************************************
+# Списки тагов
+#***************************************
+INTEGRATOR_TAGS_BILL = CH1
+INTEGRATOR_TAGS_PAY  = CH1
+#
+#***************************************
+# Подключение клиентов к нашему серверу
+#***************************************
+SIGNED_IP_ADDRESS = 0.0.0.0
+SIGNED_PORT       = 12346
+#
+#SIGNED_PORT = 54635
+#SIGNED_PORT = 12340
+#
+#***************************************
+# Управление сервером
+#***************************************
+SERVER_CMD_IP_ADDRESS =	0.0.0.0
+SERVER_CMD_IP_PORT    = 22377
+#
+#***************************************
+# Интерфейс к серверу FlashCheck
+#***************************************
+DANG_URL_ACQ    = http://172.27.72.123/GateB1v255/AAcceptorServices.asmx
+DANG_PORT_ACQ   = 80
+DANG_SERVER_APP = NetLink\B1v255
+#
+#***************************************
+# Интерфейс к серверу Молотилки
+#***************************************
+##MILL_URL      = http://172.27.72.127:80/Mill/Default.aspx
+#MILL_URL       = http://172.27.72.124:80/Mill/Default.aspx
+#MILL_SIGN_KEY  = d:\Keys\MillSignKey.rsa 
+#MILL_CHECK_KEY = d:\Keys\MillCheckKey.rsa 
+#
+#MILL_URL       = http://172.27.72.124:80/Mill/Default.aspx
+MILL_URL       = http://172.27.72.124:9999/Mill/Default.aspx
+MILL_SIGN_KEY  = R:\KeysAP\Keys\MillSignKey.pfx 
+MILL_CHECK_KEY = R:\KeysAP\Keys\MillCheckKey.crt 
+#
+#***************************************
+# Интерфейс к слушалке входящих запросов
+#***************************************
+MAX_ACCEPT_CONNECT      = 60
+MAX_ACCEPTED_TELEGRAM_LENGTH= 100000
+RECEIVE_SOCKET_TIMEOUT  = 60
+SEND_SOCKET_TIMEOUT     = 60
+RUN_CRON                = 1
+#
+#***************************************
+# Работа с криптографией
+#***************************************
+#
+#CRYPTO_DLL_PATH  = D:\work\BaseServer\Integrator\Work\VHsm
+CRYPTO_DLL_PATH  = C:\work\BaseServer_VS2019\BaseServer\Integrator\Work\VHsm\
+#
+#
+#
+#
+CRYPTO_LIB_PRIVATE_KEY_RSA       = R:\KeysAP\Keys\999900000001_priv.pfx
+CRYPTO_LIB_PRIVATE_KEY_NAME_RSA  = 999900000001
+CRYPTO_LIB_PRIVATE_KEY_PWD_RSA   = 123456
+#
+CRYPTO_LIB_PRIVATE_KEY_DSTU      = R:\KeysAP\Keys\999700000001_priv.pfx
+CRYPTO_LIB_PRIVATE_KEY_NAME_DSTU = 999700000001
+CRYPTO_LIB_PRIVATE_KEY_PWD_DSTU  = 123456
+#
+#***************************************
+# Работа с логами
+#***************************************
+LOG_INTEGRATOR_DETAIL =	1
+#
+#***************************************
+# Работа с криптографией
+#***************************************
+#
+###USE_CRYPTO_LIB     = 0
+###CRYPTO_KEYS_PATH   = d:\Keys
+###RSA_PRIVATE_KEY    = d:\Keys\999900000001_priv.key 
+###RSA_PRIVATE_KEY_1K = d:\Keys\999900000001_1K.key 
+###ID_KEY_NAME        = 999900000001
+#
+USE_CRYPTO_LIB     = 1
+CRYPTO_KEYS_PATH   = R:\KeysAP\Keys
+RSA_PRIVATE_KEY    = R:\KeysAP\Keys\RSA-2K\999900000001.pfx
+RSA_PRIVATE_KEY_1K = R:\KeysAP\Keys\RSA-1K\999900000001.pfx
+ID_KEY_NAME        = 999900000001
+#
+#SIGN_CONTROL       = 0
+#
+#STORE_I_TRANSACTIONS_COMM = 0
+#
+#SMS_URL = http://127.0.0.1:55845
+SMS_URL = http://10.1.11.1:55845
+#
