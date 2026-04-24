@@ -1,0 +1,3 @@
+[submodule "BaseServer"]
+	path = BaseServer
+	url = https://github.com/ray17ukrnet/BaseServer.git
